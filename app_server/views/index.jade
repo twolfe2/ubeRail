@@ -1,5 +1,28 @@
 extends layout
 
 block content
-  h1= title
-  p Welcome to #{title}
+	#banner.page-header
+		.row
+			.col-lg-6
+			h1= title
+			p Welcome to #{title}
+
+		.row
+			.col-xs-12.col-md-8
+				form.form-horizontal
+					fieldset
+							legend Get Uber+Rail Directions
+							.form-group
+								label(for="startingLoc" class="col-md-2 col-xs-1 control-label")
+									i.fa.fa-dot-circle-o
+								.col-md-10.col-xs-11
+									input(type="text" class="form-control" id="startingLoc" placeholder="Enter starting location")
+							.form-group
+								label(for="endingLoc" class="col-md-2 col-xs-1 control-label")
+									i.fa.fa-map-marker
+								.col-md-10.col-xs-11
+									input(type="text" class="form-control" id="startingLoc" placeholder="Enter destination")
+						.form-group
+							.col-md-12.col-xs-12
+								button(type="submit" class="btn btn-primary pull-right") Get Directions
+
