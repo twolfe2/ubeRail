@@ -7,7 +7,7 @@ var ctrlOther = require('../controllers/other');
 /* GET home page. */
 router.get('/', ctrlMain.index);
 
-router.get('/search', ctrlMain.getDirections);
+router.post('/directions', ctrlMain.getDirections);
 
 router.get('/about', ctrlOther.about);
 

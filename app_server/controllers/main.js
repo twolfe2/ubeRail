@@ -5,5 +5,15 @@ module.exports.index = function (req,res) {
 };
 
 module.exports.getDirections = function (req,res) {
-	res.render('index', {title: 'Get directions '});
+	res.render('directions', {title: 'Get directions',
+														start: req.body.start,
+														end: req.body.end
+													
+													});
 };
+
+
+
+
+
+

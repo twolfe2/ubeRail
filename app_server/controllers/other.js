@@ -7,3 +7,4 @@ module.exports.about = function (req,res) {
 module.exports.feedback = function (req,res) {
 	res.render('index', {title: 'feedback '});
 };
+
